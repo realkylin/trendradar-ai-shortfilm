@@ -11,6 +11,16 @@
 # 1. 基础设置
 # ===============================================================
 app:
+  report_mode: "current"  # 可选: daily(每日汇总) / current(当前榜单) / incremental(增量监控)
+  
+notification:
+  enable_notification: true
+  push_window:
+    enabled: true
+    time_range:
+      start: "12:00"  # 早上8点开始推送
+      end: "23:59"    # 晚上10点停止推送
+
   # 时区配置（影响所有时间显示、调度系统判断、数据存储）
   # 常用时区：
   #   - Asia/Shanghai (北京时间 UTC+8)
