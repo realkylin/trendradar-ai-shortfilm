@@ -11,7 +11,7 @@
 # 1. 基础设置
 # ===============================================================
 app:
-  report_mode: "current"  # 可选: daily(每日汇总) / current(当前榜单) / incremental(增量监控)
+  report_mode: "incremental"  # 可选: daily(每日汇总) / current(当前榜单) / incremental(增量监控)
   
 notification:
   enable_notification: true
